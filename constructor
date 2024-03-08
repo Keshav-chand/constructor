@@ -1,0 +1,27 @@
+public class contructor {
+	public contructorddemo() {
+		System.out.println("Default contructor");		
+	}
+    public contructorddemo(int a,float f, String s,char c) {
+    	System.out.println("Parameterised  contructor");
+    	System.out.println("The sqaure of interger value is:"+a*a);		
+    	System.out.println("The sqaure of float value is:"+f*f);
+    	System.out.println("The string you inputted is:"+s);
+    	System.out.println("The Charachter that you entered:"+c);	
+    }
+    public void observations() {
+    	System.out.println("inside Observations method");
+}
+public static void main(String args[]) {
+	System.out.println("From object creation method 1");
+	contructorddemo obj=new contructorddemo();
+	contructorddemo obj1=new contructorddemo(5,0.5f,"hello learner",'z');
+	//System.out.println("\nFrom Object creation method 2");
+	
+	System.out.println("\nFrom Object creation method 2");
+	//constructorddemo obj2, obj3;
+	contructorddemo obj2=new contructorddemo();
+	contructorddemo obj3=new contructorddemo(15, 2.5f, "hi learner", 'w');
+	obj.observations();
+}
+}
